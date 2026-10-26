@@ -1,5 +1,5 @@
 const taskInput = document.getElementById('new-task'); //Add a new task.
-const addButton = document.getElementsByTagName('button')[0]; //first button
+const newTaskButton = document.getElementById('add-button'); //first button
 const incompleteTasksList = document.getElementById('incomplete-tasks'); //ul of #incompleteTasks
 const completedTasksList = document.getElementById('completed-tasks'); //completed-tasks
 
@@ -108,7 +108,7 @@ const taskIncomplete = function () {
 //The glue to hold it all together.
 
 //Set the click handler to the addTask function.
-addButton.addEventListener('click', addTask);
+newTaskButton.addEventListener('click', addTask);
 
 const bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   //select ListItems children
